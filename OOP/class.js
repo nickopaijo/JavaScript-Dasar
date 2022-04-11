@@ -58,6 +58,17 @@ class Mail {
         this.from = author;
         console.log('is instantiated', author);
     };
+
+    ucapan(a){
+        if(a == "pagi"){
+            console.log("Selamat Pagi");
+        }else if(a == "siang"){
+            console.log("Selamat Siang");
+        }else {
+            console.log("apaan ini?");
+        }
+    }
 }
 
 const mail1 = new Mail("emailku@dicoding.com");
+mail1.ucapan("pagi");
