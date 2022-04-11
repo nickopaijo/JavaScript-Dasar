@@ -17,8 +17,6 @@ Mail.prototype.sendMessage = function n(msg, to) {
 
 /* Sintaksis Class */
 class Mail {
-    #contats = []
-
     constructor() {
         this.from = 'pengirim@dicoding.com';
     }
