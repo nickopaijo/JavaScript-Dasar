@@ -1,3 +1,4 @@
+/* Property */
 // cara 1
 /*class Mail {
     constructor() {
@@ -12,7 +13,7 @@
 }*/
  
 // cara 2
-/*function Mail() {
+function Mail() {
     this.from = 'pengirim@dicoding.com';
     this.contacts = [];
     this.yourOtherPrototype = 'the values';
@@ -21,4 +22,8 @@
 Mail.prototype.sendMessage = function (msg, to) {
     console.log(`you send: ${msg} to  ${to} from ${this.from}`);
     this.contacts.push(to); // menyimpan kontak baru
-};*/
+};
+
+/* Method */
+const mail1 = new Mail();
+mail1.sendMessage('hallo', 'penerima@dicoding.com');
